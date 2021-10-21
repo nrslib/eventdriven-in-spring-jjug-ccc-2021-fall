@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: debug
+  rabbitmq:
+    host: localhost
+    port: 5672
+    listener:
+      simple:
+        concurrency: 5
+        max-concurrency: 10
+        prefetch: 10
